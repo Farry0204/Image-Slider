@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Image slider</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+	<div class="cardList">
+		<button class="cardList__btn btn btn--left">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-left"></use>
+				</svg>
+			</div>
+		</button>
+
+		<div class="cards__wrapper">
+			<div class="card current--card">
+				<div class="card__image">
+					<img src="https://images.unsplash.com/photo-1523980077198-60824a7b2148?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+				</div>
+			</div>
+
+			<div class="card next--card">
+				<div class="card__image">
+					<img src="https://images.unsplash.com/photo-1677842296338-eeb8c866d22c?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+				</div>
+			</div>
+
+			<div class="card previous--card">
+				<div class="card__image">
+					<img src="https://images.unsplash.com/photo-1663213101454-d270f8f2c494?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<button class="cardList__btn btn btn--right">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-right"></use>
+				</svg>
+			</div>
+		</button>
+	</div>
+
+	<div class="infoList">
+		<div class="info__wrapper">
+			<div class="info current--info">
+				<h1 class="text name">Agra</h1>
+				<h4 class="text location">India</h4>
+				<p class="text description">Taj Mahal</p>
+			</div>
+
+			<div class="info next--info">
+				<h1 class="text name">Bayterek Tower</h1>
+				<h4 class="text location">Kazakhastan</h4>
+				<p class="text description">Live Life By Compass</p>
+			</div>
+
+			<div class="info previous--info">
+				<h1 class="text name">Hagia Sophia</h1>
+				<h4 class="text location">Turkey</h4>
+				<p class="text description">A glimpse into the heart of Turkey</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="app__bg">
+		<div class="app__bg__image current--image">
+			<img src="https://media.gettyimages.com/id/472351072/photo/taj-mahal-at-sunset.jpg?s=2048x2048&w=gi&k=20&c=M9GFUKH1gA3dFs1UZtmS4R9tapuLOCrEHuwrUhwKe18=" alt="" />
+		</div>
+		<div class="app__bg__image next--image">
+			<img src="https://media.gettyimages.com/id/1157616455/photo/kyrgyz-hunter-eagle.jpg?s=2048x2048&w=gi&k=20&c=dKoozG87wV4PspLb0ab554Ks1JTBODbvr0pcEf8mj7Q=" alt="" />
+		</div>
+		<div class="app__bg__image previous--image">
+			<img src="https://media.gettyimages.com/id/185070171/photo/hagia-sophia-and-visitors.jpg?s=2048x2048&w=gi&k=20&c=M6zEaIWIz8m2Etsby9J-_J9-V82KR97oETvGV6CAQBc=" alt="" />
+		</div>
+	</div>
+</div>
+
+<div class="loading__wrapper">
+	<div class="loader--text">Loading Wonders...</div>
+	<div class="loader">
+		<span></span>
+	</div>
+</div>
+
+
+<svg class="icons" style="display: none;">
+	<symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+		<polyline points='328 112 184 256 328 400'
+					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+	</symbol>
+	<symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+		<polyline points='184 112 328 256 184 400'
+					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+	</symbol>
+</svg>
+  <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
